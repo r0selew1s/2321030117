@@ -70,21 +70,23 @@ header{
     }
 }
 .nhan-vat{
-    width: 90%;
-    height: 30vh;
-    margin: 25vh auto;
+    width: 100%;
+    height: 5vh;
+    margin: 5vh auto;
 }
 .danh-sach-nhan-vat{
     display: flex;
-    justify-content:flex-start;
-    margin: 10px auto;
+    justify-content: space-between;
+    margin-left: 30px auto;
+    height: 10vh;
 }
-.nhan-vat{
-    width: 19%;
+.anh-nhan-vat{
+    width: 10%;
     height: 20vh;
-    
     img{
-        width: 800%;
-        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+        border-radius: 300px;
+        background-color: aquamarine;
     }
 }
