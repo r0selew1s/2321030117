@@ -81,12 +81,11 @@ header{
     height: 10vh;
 }
 .anh-nhan-vat{
-    width: 10%;
+    width: 100%;
     height: 20vh;
     img{
         width: 100%;
         height: 100%;
-        border-radius: 300px;
-        background-color: aquamarine;
+        border-radius: 20px;
     }
 }
