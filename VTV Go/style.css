@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+header{
+    width: auto;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: red;
+}
+.banner{
+    width: 50%;
+    height: 400px;
+    margin: 40px auto;
+    background-color: red;
+}
+
+.danh-sach-kenh{
+    width: 90%;
+    height: 150px;
+    padding: 0 20px;
+    margin: 120px auto;
+    background-color: blue;
+    display: flex;
+}
+.kenh{
+    width: 9%;
+    height: 100px;
+    margin: 30px auto;
+    background-color: red;
+    justify-content: space-between;
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- internal javascript -->
+     <script>
+        //có thể chèn lệnh html vào trong javascript
+        //html phải đặt trong cặp dấu "  "
+        document.writeln("Hello <br> World");
+        var tenSinhVien = "Linh Hạ";
+        var tuoiSinhVien = 20;
+        document.writeln("<br>" + tenSinhVien + tuoiSinhVien);
+        var SoThuNhat = 10;
+        var SoThuHai = 20;
+        // + - * /
+        // % chia lấy phần dư
+        var ketqua = SoThuNhat * SoThuHai   ;
+        document.writeln("kết quả là: " + ketqua);
+        
+        // ++tăng --giảm
+        document.writeln(++SoThuNhat);
+        document.writeln(--SoThuHai);
+        //tương đương: số thứ nhất = số thứ 1 + số thứ 2
+        SoThuNhat += SoThuHai;
+        document.writeln(SoThuNhat);
+        //kiểu dữ liệu
+        //string: chuỗi
+        //number: số
+        //boolean: true/false
+        var a = "10";
+        var b = "5.5";
+        //chuyển string sang number dùng parseInt() hoặc parseFloat(dùng cho số thập phân)
+        var tong = parseInt(a) + parseFloat(b);
+        document.writeln(tong);
+        //string
+        document.writeln("<br>");
+       //Kiểm tra độ dài chuỗi
+        document.writeln(tenSinhVien.length);
+        //Nối  chuỗi
+        //kiểm tra tồn tại
+        //indexOf tìm vị trí xuất hiện đầu tiên (có -vị trí / k có -1)
+        document.writeln("<br>");
+        document.writeln(tenSinhVien.indexOf("h"));
+
+        //include: kiểm tra tồn tại (có - true / k có - false)
+        document.writeln("<br>");
+        document.writeln(tenSinhVien.includes("Hạ"));
+        //replace: thay thế
+        document.writeln("<br>");
+        document.writeln(tenSinhVien.replace("Hạ", "Hà"));
+        document.writeln("<br>");
+        document.writeln(tenSinhVien);
+        
+        //kiểm tra chuỗi bắt đầu bằng từ gì
+        document.writeln("<br>");
+        document.writeln(tenSinhVien.startsWith("Hạ"));
+
+        //viết in hoa hoặc in thường
+        document.writeln("<br>");
+        document.writeln(tenSinhVien.toUpperCase());
+        document.writeln(tenSinhVien.toLowerCase());
+        //number
+        // kiểm tra có phải số hay không
+        //var a = 10;
+       //var so = 10;
+        //var kq = isNaN;
+    
+        // document.writeln(isNaN(kq)); ->
+        var homnay = new Date();
+        document.writeln("<br>");   
+        document.writeln(homnay);
+
+        var ngay = new Date(2024, 5, 6);
+        document.writeln("<br>");
+        document.writeln(ngay);
+
+        //lấy năm
+        var nam = homnay.getFullYear();
+        document.writeln("<br>");
+        document.writeln(nam);
+        //lấy tháng
+        var thang = homnay.getMonth() + 1;
+        document.writeln("<br>");
+        document.writeln(thang);
+        //lấy ngày
+        var ngay = homnay.getDate();
+        document.writeln("<br>");
+        document.writeln(ngay);
+        //lấy thứ
+        var thu = homnay.getDay();
+        document.writeln("<br>");
+        document.writeln(thu);
+
+        var NamSinhHa = 2026 - 23;
+        document.writeln("<br>");
+        document.writeln("Năm sinh của Hạ là: " + NamSinhHa);
+        //mảng(array)
+        var mangso = [1, 2, 3, 4, 5];
+        var mangten = ["Linh", "Hạ", "Hà"];
+        var thongtin = ["Hạ", 20, true];
+
+        document.writeln("<br>");
+        document.writeln(mangso[2]);
+
+        document.writeln("<br>");
+        document.writeln(mangten[2]);
+
+        document.writeln("<br>");
+        document.writeln(thongtin[0]);
+
+        //kiểm tra độ dài mảng length
+        document.writeln("<br>");
+        document.writeln(mangso.length);
+
+        document.writeln("<br>");
+        document.writeln(mangten.length);
+
+        document.writeln("<br>");
+        document.writeln(thongtin.length);
+        
+        //gộp mảng concat
+        var mangtong = mangso.concat(mangten, thongtin);
+        document.writeln("<br>");
+        document.writeln(mangtong);
+        
+        //join
+        document.writeln("<br>");
+        document.writeln(mangso.join("-"));
+        
+        //pop: lấy phần tử cuối cùng của mảng và xóa phần tử đó khỏi mảng
+        document.writeln("<br>");
+        document.writeln(mangso.pop());
+
+        //push: thêm phần tử vào cuối mảng
+        document.writeln("<br>");
+        mangso.push(6);
+        document.writeln(mangso);
+
+        //reverse: đảo ngược mảng
+        document.writeln("<br>");
+        document.writeln(mangso.reverse());
+
+        //var SoThuNhat = 10;
+        //var SoThuHai = 20;   
+        // == so sánh =
+        //!= so sánh khác
+        //> lớn hơn
+        //< nhỏ hơn
+
+        document.writeln( SoThuNhat < SoThuHai);
+        document.writeln(SoThuNhat >= 11);
+
+
+
+
+
+        //
+        document.writeln(thu);
+                var thongTinSinhVien = {
+            ten: "Doan Ha Linh",
+            tuoi: 20,
+            gioiTinh: false, //true: nam, false: nữ
+            diachi: {
+                thanhPho: "Hà Nội",
+                quan: "Cầu Giấy",   
+                phuong: "Mai Dịch"
+            }
+        }
+        var thongtinphim = {
+            ten: "Người Nhện",
+            namSX: 2023,
+            daoDien: "Jon Watts",
+            dienVien: {
+                dienVienChinh: [
+                    "Tobey Maguire", "Andrew Garfield",
+                ],
+                dienVienPhu: [
+                    "Tom Holland", "Zendaya",
+                ],
+            },
+            theLoai: "Hành động, Phiêu lưu, Khoa học viễn tưởng"
+        }
+        document.writeln("<br>");
+        document.writeln(thongtinphim.theLoai);
+        
+        
+        var d=new Date();
+        theDay=d.getDay();
+        switch(theDay){
+            case 5:
+                document.write("Finally Friday");
+                break;
+            case 6:
+                document.write("Super Saturday");
+                break;
+            case 0:
+                document.write("Sleepy Sunday");
+                break;
+            default:
+            document.writeln("<br>");    
+            document.write("I'm Looking forward to the Weekend");
+        }
+
+        for(var index=1; index<=3; index++){
+            document.writeln("<br>");
+            document.writeln("Miễn Lễ!! " + index);
+        }
+
+        var danhSachSinhZien = ["Thuy", "Mai", "Tuan", "Thang", "Thao"];
+        document.writeln("<br> Xin chào: " + danhSachSinhZien[0]); 
+        for(var index=0; index < danhSachSinhZien.length; index++){
+            document.writeln("<br>" +  index + "<br>");
+            document.writeln("Xin chào: " + danhSachSinhZien[index]);
+        }
+        
+
+        var danhSachSinhVien = ["Thuy", "Mai", "Tuan", "Thang", "Thao"];
+        document.writeln("<br> Xin chào: " + danhSachSinhVien[0]);
+        
+        for(var index=0; index<danhSachSinhVien.length; index++){
+            if(danhSachSinhVien[index] == "Tuan"||danhSachSinhVien[index] == "Thuy"){
+                document.writeln("Xin chào: " + danhSachSinhVien[index]);
+            }
+        }
+
+    //popup boxers
+    alert("Xin chào các bạn");    
+
+    //confirm
+    var r = confirm("press a button!");
+    if (r == true) {
+        document.write("<br> you pressed OK!");
+    } else {
+        document.write("<br> you pressed Cancel!");
+    }
+
+
+    //prompt box
+    r = prompt("Please enter your name", "Tên của bạn là gì?");
+    document.write("<br> Cung thỉnh mời! " + r + " Quỳnh Hoa Dung Liễu Hạnh Công Chúa");
+     </script>
+    <!-- external js -->
+    <br>
+    <!-- <script src="script.js"></script>  -->
+
+</body>
+</html>
