@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- đầu trang -->   
+    <header>
+    <!-- danh mục -->
+        <nav class="danh muc">
+            <ul class="danh-sach-muc">
+                <img class="logo" src="logo.svg" alt="">
+                <li class="muc-rieng muc-dang-chon"><a href="#" class="lien-ket-muc">Trang Chủ</a></li>
+                <li class="muc-rieng"><a href="#" class="lien-ket-muc">Nhân Vật</a></li>
+                <li class="muc-rieng"><a href="#" class="lien-ket-muc">Series</a></li>
+                <li class="muc-rieng"><a href="#" class="lien-ket-muc">Phim</a></li>
+                <li class="muc-rieng"><a href="#" class="lien-ket-muc">Mới & Phổ biến</a></li>
+                <li class="muc-rieng"><a href="#" class="lien-ket-muc">Netflix của tôi</a></li>
+                <li class="muc-rieng"><a href="#" class="lien-ket-muc">Duyệt tìm theo ngôn ngữ</a></li>
+            </ul>
+        </nav>
+        <div class="chuc-nang">
+            <img class="avt" src="../ảnh/avt.jpg" alt="">
+    </header>
+    <main>
+      <div class="phan-tren">
+        <iframe class="video" src="https://www.youtube.com/embed/W2sKp1p_WmY?si=vMoXxjnPLM41SWl0"></iframe>
+        <h1>Phim Đang Xem</h1>
+      </div> 
+      <div class="the-loai">
+        <div class="ten-the-loai">
+            <h2>Phim Đề Xuất</h2>
+        </div>
+        <div class="danh-sach-phim">
+            <div onclick="chonPhim(1)" class="phim">
+                <img src="LT.jpg" alt="">
+               <h3> Lạc Trôi</h3>
+            </div>
+            <div onclick="chonPhim(2)" class="phim">
+                <img src="ECHQ.jpg" alt="">
+               <h3> Em Của Ngày Hôm Qua </h3>
+            </div>
+            <div onclick="chonPhim(3)" class="phim">
+                <img src="NNCA.jpg" alt="">
+                <h3> Nơi Này Có Anh</h3>
+            </div>
+            <div onclick="chonPhim(4)" class="phim">
+                <img src="NAXD.jpg" alt="">
+                <h3> Nắng Ấm Xa Dần</h3>
+            </div>
+            <div onclick="chonPhim(5)" class="phim">
+                <img src="ANN.jpg" alt="">
+                <h3> Ấn Nút Nhớ Thả Giấc Mơ</h3>
+            </div>
+        </div>
+        
+    </main>
+   <script src="script.js"></script>
+
+</body>
+</html>
